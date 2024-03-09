@@ -66,8 +66,20 @@ class _HomePageState extends State<HomePage> {
           margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 25),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [_headerContent(), _recipeType(), _recipeList()],
+            children: [
+              _headerContent(),
+              _recipeType(),
+              _recipeList(),
+            ],
           ),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Colors.orange[900],
+        child: const Text(
+          "+",
+          style: TextStyle(fontSize: 30, color: Colors.white),
         ),
       ),
     );
